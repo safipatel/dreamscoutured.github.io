@@ -10,24 +10,27 @@
 		<style>
 			.carousel-inner > .item > img,
 			.carousel-inner > .item > a > img {
+				height: 70%
 				width: 70%;
 				margin: auto;
 			}
-			.navbar-inverse{
-				font-size:28px;
-			}
-			.affix {
-				top: 0;
-				width: 100%;
-				font-size:28px;
-			}
-			.affix + .container-fluid {
-				padding-top: 70px;
-				font-size:28px;
-			}
-			.jumbotron{
-				font-size:82px;
+			.carheading{
+				font-size:52px;
 				font-weight:bold;
+			}
+			.details-body {
+				font-size:15px;
+				font-family: 'comic-sans';
+			}
+			.bodyheader{
+				font-family: 'learning_curve_proregular';	
+			}
+			.navbar-brand{
+				font-size:42px;
+				font-weight:bold;
+			}
+			.navbuttons{
+				font-size:32px;
 			}
 			@font-face {
 				font-family: 'learning_curve_proregular';
@@ -43,19 +46,33 @@
 	</head>
 	<body style="background-image:url(http://dreamscoutured.com/background.jpg) ; font-family:learning_curve_proregular">
 
-		<div class="container-fluid">
-			<div style="background:black !important" class="jumbotron">
-					<b><center>Dreams Couture'd</center></b>
-			</div>
-			<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="http://dreamscoutured.com/">Dreams Couture'd</a></li>
-					<li><a href="http://dreamscoutured.com/">Home</a></li>
-					<li><a href="http://dreamscoutured.com/about.html">About us</a></li>
-					<li><a href="http://dreamscoutured.com/details.html">Prices</a></li>
-					<li><a href="http://goo.gl/forms/dwSELU9Pcw" target="Order now">Order Now</a></li>
-				</ul>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Dreams Couture'd</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class = "navbuttons">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="http://dreamscoutured.com/">Dreams Couture'd</a></li>
+								<li class="active"><a href="http://dreamscoutured.com/">Home</a></li>
+								<li><a href="http://dreamscoutured.com/about.html">About</a></li>
+								<li><a href="http://dreamscoutured.com/details.html">Prices</a></li>
+								<li><a href="http://goo.gl/forms/dwSELU9Pcw" target="OrderNow">Order Now</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
 			</nav>
+			<div class="container-fluid">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -67,14 +84,14 @@
 			
 				</ol>
 		
-				<!-- Wrapper for slides -->
+
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
 						<div class="img-responsive">
 							<center>
-								<h1>Custom Design</h1>
+								<div class="carheading">Custom Design</div>
 								<br>
-								<img src="http://dreamscoutured.com/pic_1.jpg" alt="Custom Design" width="460" height="345">
+								<img src="http://dreamscoutured.com/pic_1.jpg" alt="Custom Design" width="640" height="640">
 								<br><br><br><br>
 							</center>
 						</div>
@@ -82,9 +99,9 @@
 					<div class="item">
 						<div class="img-responsive">
 							<center>
-									<h1>"100% Cotton Nightwear" </h1>
+									<div class="carheading">"100% Cotton Nightwear"</div>
 									<br>
-									<img src="http://dreamscoutured.com/pic_2.jpg" alt="For All Ages" width="460" height="345">
+									<img src="http://dreamscoutured.com/pic_2.jpg" alt="For All Ages" width="783" height="640">
 									<br><br><br><br>
 							</center>
 						</div>
@@ -92,9 +109,9 @@
 					<div class="item">
 						<center>
 							<div class="img-responsive">
-									<h1>Complete sleepwear</h1>
+									<div class="carheading">Complete sleepwear</div>
 									<br>
-									<img src="http://dreamscoutured.com/pic_3.jpg" alt=Complete sleepwear" width="345" height="345">
+									<img src="http://dreamscoutured.com/pic_3.jpg" alt="Complete sleepwear" width="907" height="640">
 									<br><br><br><br>
 							</div>
 						</center>
@@ -103,8 +120,8 @@
 						<div class="img-responsive">
 							<center>
 								<br>
-								<h1>Order Now!</h1>
-								<img src="http://dreamscoutured.com/pic_4.jpg" alt="Order Now!" width="460" height="345">
+								<div class="carheading">Order Now!</div>
+								<img src="http://dreamscoutured.com/pic_4.jpg" alt="Order Now!" width="640" height="640">
 								<br><br><br><br>	
 							</center>
 						</div>
@@ -133,8 +150,8 @@
 				  <span class="sr-only">Next</span>
 				</a>
 			</div>
+			</div>
 		
-		</div>
 
 	</body>
 </html>

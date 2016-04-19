@@ -8,77 +8,72 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<style>
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-		  width: 70%;
-		  margin: auto;
-		}
-		.navbar-inverse{
-			font-size:28px;
+			.details-body {
+				font-size:15px;
+				font-family: 'comic-sans';
+			}
+			.bodyheader{
+				font-family: 'learning_curve_proregular';	
+			}
+			.navbar-brand{
+				font-size:42px;
+				font-weight:bold;
+			}
+			.navbuttons{
+				font-size:32px;
+			}
+			
+			@font-face {
+				font-family: 'learning_curve_proregular';
+				src: url('http://dreamscoutured.com/learningcurve_ot-webfont.eot'),
+				url('http://dreamscoutured.com/learningcurve_ot-webfont.eot?#iefix') format('embedded-opentype'),
+				url('http://dreamscoutured.com/learningcurve_ot-webfont.woff2') format('woff2'),
+				url('http://dreamscoutured.com/learningcurve_ot-webfont.woff') format('woff');
 
-		}
-		.affix {
-			top: 0;
-			width: 100%;
-			font-size:28px;
-		}
-		.affix + .container-fluid {
-			padding-top: 70px;
-			font-size:28px;
-		}
-		.details-body {
-		 font-size:15px;
-		 font-family: 'comic-sans';
-		}
-		.bodyheader{
-			font-family: 'learning_curve_proregular';	
-		}
-		.jumbotron{
-			font-size:82px;
-			font-weight:bold;
-		}
-		
-		@font-face {
-			font-family: 'learning_curve_proregular';
-			src: url('http://dreamscoutured.com/learningcurve_ot-webfont.eot'),
-			url('http://dreamscoutured.com/learningcurve_ot-webfont.eot?#iefix') format('embedded-opentype'),
-			url('http://dreamscoutured.com/learningcurve_ot-webfont.woff2') format('woff2'),
-			url('http://dreamscoutured.com/learningcurve_ot-webfont.woff') format('woff');
-		
-			font-weight: normal;
-			font-style: normal;
-		
-		}
-		@font-face {
-			font-family: 'comic-sans';
-			src: url('http://dreamscoutured.com/LDFComicSans.eot'),
-			url('http://dreamscoutured.com/LDFComicSans.eot?#iefix') format('embedded-opentype'),
-			url('http://dreamscoutured.com/LDFComicSans.woff2') format('woff2'),
-			url('http://dreamscoutured.com/LDFComicSans.woff') format('woff');
-			font-weight: normal;
-			font-style: normal;
-		}
-	  </style>
-	  <link rel="shortcut icon" type="image/x-icon" href="http://dreamscoutured.com/icon.jpg" />
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'comic-sans';
+				src: url('http://dreamscoutured.com/LDFComicSans.eot'),
+				url('http://dreamscoutured.com/LDFComicSans.eot?#iefix') format('embedded-opentype'),
+				url('http://dreamscoutured.com/LDFComicSans.woff2') format('woff2'),
+				url('http://dreamscoutured.com/LDFComicSans.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
+		<link rel="shortcut icon" type="image/x-icon" href="http://dreamscoutured.com/icon.jpg">
 	</head>
 	<body style="background-image:url(http://dreamscoutured.com/background.jpg) ; font-family:learning_curve_proregular">
+	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-			<div style="background:black !important" class="jumbotron">
-				<b><center>Pricing and Details</center></b>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Pricing and Details</a>
 			</div>
-			
-			<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="http://dreamscoutured.com/">Dreams Couture'd</a></li>
-					<li><a href="http://dreamscoutured.com/">Home</a></li>
-					<li><a href="http://dreamscoutured.com/about.html">About</a></li>
-					<li><a href="http://dreamscoutured.com/details.html">Prices</a></li>
-					<li><a href="http://goo.gl/forms/dwSELU9Pcw" target="OrderNow">Order Now</a></li>
 
-				</ul>
-			</nav>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class = "navbuttons">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="http://dreamscoutured.com/">Dreams Couture'd</a></li>
+						<li><a href="http://dreamscoutured.com/">Home</a></li>
+						<li><a href="http://dreamscoutured.com/about.html">About</a></li>
+						<li class="active"><a href="http://dreamscoutured.com/details.html">Prices</a></li>
+						<li><a href="http://goo.gl/forms/dwSELU9Pcw" target="OrderNow">Order Now</a></li>
+					</ul>
+				</div>
 
-			<div class= "details-body">
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class= "details-body">
 				<div class="well">
 					<center>
 					<p>	
@@ -114,11 +109,7 @@
 					</p>
 					</center>
 				</div>
-			</div>
 		</div>
-		<br>
-		<br>
-
-
+	</div>
 	</body>
 </html>

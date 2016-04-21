@@ -16,6 +16,11 @@
 			ga('create', 'UA-76613311-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script type="text/javascript">
+			if (screen.width < 826 && window.location.search.substring(1)!="desktop") {
+				window.location = "mobile";
+			}
+		</script>
 		<style>
 			.carousel-inner > .item > img,
 			.carousel-inner > .item > a > img {
